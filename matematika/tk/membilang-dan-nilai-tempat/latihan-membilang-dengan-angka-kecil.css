@@ -1,0 +1,90 @@
+/* soal 1 */
+.kotak-gambar-drag1 {
+    width: 100px;
+    border: 2px solid grey;
+    cursor: grab;
+}
+
+#drop-zone1 {
+    width: 800px;
+    height: 100px;
+    border: 5px solid black;
+}
+
+/* soal 2 */
+.kotak-gambar-drag2 {
+    width: 100px;
+    border: 2px solid grey;
+    cursor: grab;
+}
+
+#drop-zone2 {
+    width: 800px;
+    height: 100px;
+    border: 5px solid black;
+}
+
+/* soal 3 */
+.kotak-gambar-drag3 {
+    width: 75px;
+    border: 2px solid grey;
+    cursor: grab;
+}
+
+#drop-zone3 {
+    width: 800px;
+    height: 100px;
+    border: 5px solid black;
+}
+
+/* soal 4 */
+.kotak-gambar-drag4 {
+    width: 130px;
+    border: 2px solid grey;
+    cursor: grab;
+}
+
+#drop-zone4 {
+    width: 800px;
+    height: 100px;
+    border: 5px solid black;
+}
+
+/* soal 5 */
+.kotak-gambar-drag5 {
+    width: 85px;
+    border: 2px solid grey;
+    cursor: grab;
+}
+
+#drop-zone5 {
+    width: 800px;
+    height: 100px;
+    border: 5px solid black;
+}
+
+/* soal 6 */
+.kotak-gambar-drag6 {
+    width: 100px;
+    border: 2px solid grey;
+    cursor: grab;
+}
+
+#drop-zone6 {
+    width: 800px;
+    height: 100px;
+    border: 5px solid black;
+}
+
+/* soal 7 */
+.kotak-gambar-drag7 {
+    width: 100px;
+    border: 2px solid grey;
+    cursor: grab;
+}
+
+#drop-zone7 {
+    width: 800px;
+    height: 100px;
+    border: 5px solid black;
+}

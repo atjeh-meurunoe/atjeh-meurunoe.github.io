@@ -1,0 +1,44 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 25px 50px;
+  background: #132257;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 7.5px;
+}
+
+.tiga-garis {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .menu-selain-kursus {
+    display: none;
+  }
+
+  .tiga-garis {
+    display: inline;
+  }
+}
+
+.kotak-pencari {
+  width: 175px;
+  height: 32.5px;
+}
+
+#t1 {
+  margin-top: 150px;
+}
