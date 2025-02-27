@@ -1,16 +1,16 @@
-var tombolJawaban1_1 = document.getElementById('cekjawaban1_1');
-var tombolJawaban1_2 = document.getElementById('cekjawaban1_2');
-var tombolJawaban2_1 = document.getElementById('cekjawaban2_1');
-var tombolJawaban2_2 = document.getElementById('cekjawaban2_2');
-var tombolJawaban3 = document.getElementById('cekjawaban3');
-var tombolJawaban4 = document.getElementById('cekjawaban4');
+let tombolJawaban1_1 = document.getElementById('cekjawaban1_1');
+let tombolJawaban1_2 = document.getElementById('cekjawaban1_2');
+let tombolJawaban2_1 = document.getElementById('cekjawaban2_1');
+let tombolJawaban2_2 = document.getElementById('cekjawaban2_2');
+let tombolJawaban3 = document.getElementById('cekjawaban3');
+let tombolJawaban4 = document.getElementById('cekjawaban4');
 
-var j1_1 = true;
-var j1_2 = true;
-var j2_1 = true;
-var j2_2 = true;
-var j3 = true;
-var j4 = true;
+let j1_1 = true;
+let j1_2 = true;
+let j2_1 = true;
+let j2_2 = true;
+let j3 = true;
+let j4 = true;
 
 tombolJawaban1_1.addEventListener('click', function() {
   if (j1_1 == true) {
@@ -61,6 +61,7 @@ tombolJawaban2_2.addEventListener('click', function() {
   }
 });
 
+//Periksa jawaban nomor 3 dan 4
 
 let kolomJawaban3 = document.getElementById("kolomjawaban3");
 let kolomJawaban4 = document.getElementById("kolomjawaban4");

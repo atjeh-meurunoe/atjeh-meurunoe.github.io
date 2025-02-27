@@ -36,7 +36,7 @@ dropZone1.addEventListener('drop', function(e) {
     if (counter1 == 8) {
     
         tandaSudahPenuh1.setAttribute("id", "kotak-soal-1-penuh");
-        tandaSudahPenuh1.innerHTML = "Ka Peunoh";
+        tandaSudahPenuh1.innerHTML = "<b>Ka Peunoh</b>";
 
         spaceSoal1.replaceWith(tandaSudahPenuh1);
     }
@@ -90,11 +90,11 @@ hapusDrop1.addEventListener('click', function() {
 cekJawaban1.addEventListener('click', function() {
 
     if (counter1 == 0) {
-        hasilJawaban1.innerHTML = 'Kotak Mantöng Soh';
+        hasilJawaban1.innerHTML = '<b>Kotak Mantöng Soh</b>';
     } else if (counter1 == 7) {
-        hasilJawaban1.innerHTML = 'Beutôi';
+        hasilJawaban1.innerHTML = '<b>Beutôi</b>';
     } else {
-        hasilJawaban1.innerHTML = 'Salah';
+        hasilJawaban1.innerHTML = '<b>Salah</b>';
     }
     
 })
@@ -137,7 +137,7 @@ dropZone2.addEventListener('drop', function(e) {
     if (counter2 == 8) {
     
         tandaSudahPenuh2.setAttribute("id", "kotak-soal-2-penuh");
-        tandaSudahPenuh2.innerHTML = "Ka Peunoh";
+        tandaSudahPenuh2.innerHTML = "<b>Ka Peunoh</b>";
 
         spaceSoal2.replaceWith(tandaSudahPenuh2);
     }
@@ -191,11 +191,11 @@ hapusDrop2.addEventListener('click', function() {
 cekJawaban2.addEventListener('click', function() {
 
     if (counter2 == 0) {
-        hasilJawaban2.innerHTML = 'Kotak Mantöng Soh';
+        hasilJawaban2.innerHTML = '<b>Kotak Mantöng Soh</b>';
     } else if (counter2 == 4) {
-        hasilJawaban2.innerHTML = 'Beutôi';
+        hasilJawaban2.innerHTML = '<b>Beutôi</b>';
     } else {
-        hasilJawaban2.innerHTML = 'Salah';
+        hasilJawaban2.innerHTML = '<b>Salah</b>';
     }
     
 })
@@ -237,7 +237,7 @@ dropZone3.addEventListener('drop', function(e) {
     if (counter3 == 10) {
     
         tandaSudahPenuh3.setAttribute("id", "kotak-soal-3-penuh");
-        tandaSudahPenuh3.innerHTML = "Ka Peunoh";
+        tandaSudahPenuh3.innerHTML = "<b>Ka Peunoh</b>";
 
         spaceSoal3.replaceWith(tandaSudahPenuh3);
     }
@@ -291,14 +291,15 @@ hapusDrop3.addEventListener('click', function() {
 cekJawaban3.addEventListener('click', function() {
 
     if (counter3 == 0) {
-        hasilJawaban3.innerHTML = 'Kotak Mantöng Soh';
+        hasilJawaban3.innerHTML = '<b>Kotak Mantöng Soh</b>';
     } else if (counter3 == 9) {
-        hasilJawaban3.innerHTML = 'Beutôi';
+        hasilJawaban3.innerHTML = '<b>Beutôi</b>';
     } else {
-        hasilJawaban3.innerHTML = 'Salah';
+        hasilJawaban3.innerHTML = '<b>Salah</b>';
     }
     
 })
+
 
 
 //DI BAWAH INI UNTUK SOAL NO. 4 -- ALGORIMTA DARI SINTAKSNYA SAMA PERSIS SEPERTI SEBELUMNYA
@@ -334,22 +335,22 @@ dropZone4.addEventListener('drop', function(e) {
     if (e.dataTransfer.getData('soal') !== '4') return;
     
     //Jika counter sudah mencapai 10, maka tampilkan tulisan "ka peunoh" atau "sudah penuh"
-    if (counter4 == 6) {
+    if (counter4 == 8) {
     
         tandaSudahPenuh4.setAttribute("id", "kotak-soal-4-penuh");
-        tandaSudahPenuh4.innerHTML = "Ka Peunoh";
+        tandaSudahPenuh4.innerHTML = "<b>Ka Peunoh</b>";
 
         spaceSoal4.replaceWith(tandaSudahPenuh4);
     }
 
     //Jika jumlah gambar di kotak drop < 10 maka jalankan fungsi drag and drop sebagaimana mestinya
-    if (counter4 < 6) {
+    if (counter4 < 8) {
         //Tracking (hitung sudah berapa kali aksi drag & drop dilakukan)
         counter4++;
 
         // Buat <div> baru untuk menambahkan (append) gambar yang diseleksi ke dalam <div> tersebut
         let divBaru4 = document.createElement('div');
-        divBaru4.style.width = '130px';
+        divBaru4.style.width = '100px';
         divBaru4.style.display = 'inline-block';
         divBaru4.draggable = false;
         
@@ -379,9 +380,9 @@ hapusDrop4.addEventListener('click', function() {
 
     }
 
-    gambarTerakhirDivBaru4 = dropZone3.lastElementChild;
+    gambarTerakhirDivBaru4 = dropZone4.lastElementChild;
 
-    if (counter4 < 6) {
+    if (counter4 < 8) {
         tandaSudahPenuh4.replaceWith(spaceSoal4);
     }
     
@@ -391,11 +392,11 @@ hapusDrop4.addEventListener('click', function() {
 cekJawaban4.addEventListener('click', function() {
 
     if (counter4 == 0) {
-        hasilJawaban4.innerHTML = 'Kotak Mantöng Soh';
-    } else if (counter4 == 2) {
-        hasilJawaban4.innerHTML = 'Beutôi';
+        hasilJawaban4.innerHTML = '<b>Kotak Mantöng Soh</b>';
+    } else if (counter4 == 3) {
+        hasilJawaban4.innerHTML = '<b>Beutôi</b>';
     } else {
-        hasilJawaban4.innerHTML = 'Salah';
+        hasilJawaban4.innerHTML = '<b>Salah</b>';
     }
     
 })
@@ -435,22 +436,22 @@ dropZone5.addEventListener('drop', function(e) {
     if (e.dataTransfer.getData('soal') !== '5') return;
     
     //Jika counter sudah mencapai 10, maka tampilkan tulisan "ka peunoh" atau "sudah penuh"
-    if (counter5 == 9) {
+    if (counter5 == 8) {
     
         tandaSudahPenuh5.setAttribute("id", "kotak-soal-5-penuh");
-        tandaSudahPenuh5.innerHTML = "Ka Peunoh";
+        tandaSudahPenuh5.innerHTML = "<b>Ka Peunoh</b>";
 
         spaceSoal5.replaceWith(tandaSudahPenuh5);
     }
 
     //Jika jumlah gambar di kotak drop < 10 maka jalankan fungsi drag and drop sebagaimana mestinya
-    if (counter5 < 9) {
+    if (counter5 < 8) {
         //Tracking (hitung sudah berapa kali aksi drag & drop dilakukan)
         counter5++;
 
         // Buat <div> baru untuk menambahkan (append) gambar yang diseleksi ke dalam <div> tersebut
         let divBaru5 = document.createElement('div');
-        divBaru5.style.width = '85px';
+        divBaru5.style.width = '100px';
         divBaru5.style.display = 'inline-block';
         divBaru5.draggable = false;
         
@@ -482,7 +483,7 @@ hapusDrop5.addEventListener('click', function() {
 
     gambarTerakhirDivBaru5 = dropZone5.lastElementChild;
 
-    if (counter5 < 9) {
+    if (counter5 < 8) {
         tandaSudahPenuh5.replaceWith(spaceSoal5);
     }
     
@@ -492,213 +493,11 @@ hapusDrop5.addEventListener('click', function() {
 cekJawaban5.addEventListener('click', function() {
 
     if (counter5 == 0) {
-        hasilJawaban5.innerHTML = 'Kotak Mantöng Soh';
-    } else if (counter5 == 8) {
-        hasilJawaban5.innerHTML = 'Beutôi';
+        hasilJawaban5.innerHTML = '<b>Kotak Mantöng Soh</b>';
+    } else if (counter5 == 5) {
+        hasilJawaban5.innerHTML = '<b>Beutôi</b>';
     } else {
-        hasilJawaban5.innerHTML = 'Salah';
-    }
-    
-})
-
-
-
-//DI BAWAH INI UNTUK SOAL NO. 6 -- ALGORIMTA DARI SINTAKSNYA SAMA PERSIS SEPERTI SEBELUMNYA
-
-//Saat gambar di-drag & di-drop pada kotak jawaban
-
-let counter6 = 0;
-let kotakGambarDrag6 = document.querySelector('.kotak-gambar-drag6');
-let gambarDrag6 = document.querySelector('.kotak-gambar-drag6 img');
-let dropZone6 = document.getElementById('drop-zone6');
-let selected6;
-let gambarDrop6 = [];
-let hapusDrop6 = document.getElementById('hapusDrop6');
-let spaceSoal6 = document.getElementById('space-soal-6');
-let cekJawaban6 = document.getElementById('cekJawaban6')
-let tandaSudahPenuh6 = document.createElement("div");
-let hasilJawaban6 = document.getElementById('hasilJawaban6');
-
-// Tambah event listener untuk "dragstart" pada gambar yang ada di dalam kotakGambarDrag
-gambarDrag6.addEventListener('dragstart', function(e) {
-    selected6 = e.target;
-    e.dataTransfer.setData('soal', '6'); // Set data sembarang untuk mengecek apakah sumber gambar dari soal terkait
-})
-
-// Tambah event listener untuk "dragover" dan "drop" hanya sekali (maksud?)
-dropZone6.addEventListener('dragover', function(e) {
-    e.preventDefault();
-})
-    
-dropZone6.addEventListener('drop', function(e) {
-
-    // Pastikan gambarnya merupakan gambar pada pertanyaan terkait sebelum 'drop' diizinkan
-    if (e.dataTransfer.getData('soal') !== '6') return;
-    
-    //Jika counter sudah mencapai 10, maka tampilkan tulisan "ka peunoh" atau "sudah penuh"
-    if (counter6 == 8) {
-    
-        tandaSudahPenuh6.setAttribute("id", "kotak-soal-6-penuh");
-        tandaSudahPenuh6.innerHTML = "Ka Peunoh";
-
-        spaceSoal6.replaceWith(tandaSudahPenuh6);
-    }
-
-    //Jika jumlah gambar di kotak drop < 10 maka jalankan fungsi drag and drop sebagaimana mestinya
-    if (counter6 < 8) {
-        //Tracking (hitung sudah berapa kali aksi drag & drop dilakukan)
-        counter6++;
-
-        // Buat <div> baru untuk menambahkan (append) gambar yang diseleksi ke dalam <div> tersebut
-        let divBaru6 = document.createElement('div');
-        divBaru6.style.width = '100px';
-        divBaru6.style.display = 'inline-block';
-        divBaru6.draggable = false;
-        
-        // Clone gambar yang telah diseleksi tersebut untuk kemudian hasilnya ditambahkan ke <div> yang sudah dibuat sebelumnya
-        // hasil kloning dari gambar yang diseleksi tidak bisa di-drag lagi nantinya, sementara pada 'selected', draggable masih bernilai 'true')
-        let clonedSelected6 = selected6.cloneNode(true);
-        divBaru6.appendChild(clonedSelected6);
-        clonedSelected6.draggable = false;
-
-        gambarDrop6[counter6-1] = clonedSelected6;
-    
-        //tambakan (append) <div> yang sudah mengandung gambar kloningan tersebut ke dalam dropZone1
-        dropZone6.appendChild(divBaru6);
-    }
-})
-
-//Saat tombol remove ditekan, maka hapus 1 elemen array dari gambarDrop
-hapusDrop6.addEventListener('click', function() {
-
-    let gambarTerakhirDivBaru6 = dropZone6.lastElementChild;
-
-    if (gambarDrop6.length > 0) {
-    
-        dropZone6.removeChild(gambarTerakhirDivBaru6);
-        gambarDrop6.pop();
-        counter6--;
-
-    }
-
-    gambarTerakhirDivBaru6 = dropZone6.lastElementChild;
-
-    if (counter6 < 8) {
-        tandaSudahPenuh6.replaceWith(spaceSoal6);
-    }
-    
-})
-
-//Saat tombol 'Cek Jawaban' di-klik
-cekJawaban6.addEventListener('click', function() {
-
-    if (counter6 == 0) {
-        hasilJawaban6.innerHTML = 'Kotak Mantöng Soh';
-    } else if (counter6 == 3) {
-        hasilJawaban6.innerHTML = 'Beutôi';
-    } else {
-        hasilJawaban6.innerHTML = 'Salah';
-    }
-    
-})
-
-
-
-//DI BAWAH INI UNTUK SOAL NO. 7 -- ALGORIMTA DARI SINTAKSNYA SAMA PERSIS SEPERTI SEBELUMNYA
-
-//Saat gambar di-drag & di-drop pada kotak jawaban
-
-let counter7 = 0;
-let kotakGambarDrag7 = document.querySelector('.kotak-gambar-drag7');
-let gambarDrag7 = document.querySelector('.kotak-gambar-drag7 img');
-let dropZone7 = document.getElementById('drop-zone7');
-let selected7;
-let gambarDrop7 = [];
-let hapusDrop7 = document.getElementById('hapusDrop7');
-let spaceSoal7 = document.getElementById('space-soal-7');
-let cekJawaban7 = document.getElementById('cekJawaban7')
-let tandaSudahPenuh7 = document.createElement("div");
-let hasilJawaban7 = document.getElementById('hasilJawaban7');
-
-// Tambah event listener untuk "dragstart" pada gambar yang ada di dalam kotakGambarDrag
-gambarDrag7.addEventListener('dragstart', function(e) {
-    selected7 = e.target;
-    e.dataTransfer.setData('soal', '7'); // Set data sembarang untuk mengecek apakah sumber gambar dari soal terkait
-})
-
-// Tambah event listener untuk "dragover" dan "drop" hanya sekali (maksud?)
-dropZone7.addEventListener('dragover', function(e) {
-    e.preventDefault();
-})
-    
-dropZone7.addEventListener('drop', function(e) {
-
-    // Pastikan gambarnya merupakan gambar pada pertanyaan terkait sebelum 'drop' diizinkan
-    if (e.dataTransfer.getData('soal') !== '7') return;
-    
-    //Jika counter sudah mencapai 10, maka tampilkan tulisan "ka peunoh" atau "sudah penuh"
-    if (counter7 == 8) {
-    
-        tandaSudahPenuh7.setAttribute("id", "kotak-soal-7-penuh");
-        tandaSudahPenuh7.innerHTML = "Ka Peunoh";
-
-        spaceSoal7.replaceWith(tandaSudahPenuh7);
-    }
-
-    //Jika jumlah gambar di kotak drop < 10 maka jalankan fungsi drag and drop sebagaimana mestinya
-    if (counter7 < 8) {
-        //Tracking (hitung sudah berapa kali aksi drag & drop dilakukan)
-        counter7++;
-
-        // Buat <div> baru untuk menambahkan (append) gambar yang diseleksi ke dalam <div> tersebut
-        let divBaru7 = document.createElement('div');
-        divBaru7.style.width = '100px';
-        divBaru7.style.display = 'inline-block';
-        divBaru7.draggable = false;
-        
-        // Clone gambar yang telah diseleksi tersebut untuk kemudian hasilnya ditambahkan ke <div> yang sudah dibuat sebelumnya
-        // hasil kloning dari gambar yang diseleksi tidak bisa di-drag lagi nantinya, sementara pada 'selected', draggable masih bernilai 'true')
-        let clonedSelected7 = selected7.cloneNode(true);
-        divBaru7.appendChild(clonedSelected7);
-        clonedSelected7.draggable = false;
-
-        gambarDrop7[counter7-1] = clonedSelected7;
-    
-        //tambakan (append) <div> yang sudah mengandung gambar kloningan tersebut ke dalam dropZone1
-        dropZone7.appendChild(divBaru7);
-    }
-})
-
-//Saat tombol remove ditekan, maka hapus 1 elemen array dari gambarDrop
-hapusDrop7.addEventListener('click', function() {
-
-    let gambarTerakhirDivBaru7 = dropZone7.lastElementChild;
-
-    if (gambarDrop7.length > 0) {
-    
-        dropZone7.removeChild(gambarTerakhirDivBaru7);
-        gambarDrop7.pop();
-        counter7--;
-
-    }
-
-    gambarTerakhirDivBaru7 = dropZone7.lastElementChild;
-
-    if (counter7 < 8) {
-        tandaSudahPenuh7.replaceWith(spaceSoal7);
-    }
-    
-})
-
-//Saat tombol 'Cek Jawaban' di-klik
-cekJawaban7.addEventListener('click', function() {
-
-    if (counter7 == 0) {
-        hasilJawaban7.innerHTML = 'Kotak Mantöng Soh';
-    } else if (counter7 == 5) {
-        hasilJawaban7.innerHTML = 'Beutôi';
-    } else {
-        hasilJawaban7.innerHTML = 'Salah';
+        hasilJawaban5.innerHTML = '<b>Salah</b>';
     }
     
 })
