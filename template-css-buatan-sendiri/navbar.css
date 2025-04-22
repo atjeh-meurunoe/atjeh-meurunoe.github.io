@@ -1,0 +1,26 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 25px 50px;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  #navbar a {
+    color: rgb(246, 206, 50);
+    text-decoration: none;
+    margin: 7.5px;
+  }
+
+  .kotak-pencari {
+    width: 175px;
+    height: 32.5px;
+  }
