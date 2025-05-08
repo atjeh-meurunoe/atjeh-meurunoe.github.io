@@ -62,29 +62,3 @@
     height: 100px;
     border: 5px solid black;
 }
-
-/* soal 6 */
-.kotak-gambar-drag6 {
-    width: 100px;
-    border: 2px solid grey;
-    cursor: grab;
-}
-
-#drop-zone6 {
-    width: 800px;
-    height: 100px;
-    border: 5px solid black;
-}
-
-/* soal 7 */
-.kotak-gambar-drag7 {
-    width: 100px;
-    border: 2px solid grey;
-    cursor: grab;
-}
-
-#drop-zone7 {
-    width: 800px;
-    height: 100px;
-    border: 5px solid black;
-}

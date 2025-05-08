@@ -1,0 +1,12 @@
+/* soal 5 */
+.kotak-gambar-drag5 {
+    width: 95px;
+    border: 2px solid grey;
+    cursor: grab;
+}
+
+#drop-zone5 {
+    width: 800px;
+    height: 50px;
+    border: 5px solid black;
+}
