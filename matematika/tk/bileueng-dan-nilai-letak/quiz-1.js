@@ -1,3 +1,6 @@
+let skor_akhir = 0;
+let jumlah_benar = 0;
+
 let kolomJawaban1 = document.getElementById("kolomjawaban1");
 let tombolJawaban1 = document.getElementById('cekjawaban1');
 let hasilJawaban1 = document.getElementById('jawaban1');
@@ -33,7 +36,7 @@ let kolomJawaban10 = document.getElementById("kolomjawaban10");
 let tombolJawaban10 = document.getElementById('cekjawaban10');
 let hasilJawaban10 = document.getElementById('jawaban10');
 
-//Periksa jawaban no. 2
+//Periksa jawaban no. 1
 let j1 = true;
 
 kolomJawaban1.addEventListener('submit', function(event) {
@@ -45,6 +48,8 @@ kolomJawaban1.addEventListener('submit', function(event) {
       hasilJawaban1.innerHTML = 'Beutôi';
       tombolJawaban1.innerHTML = 'Tôp Jawaban';
       j1 = false;
+      skor_akhir = skor_akhir+10;
+      jumlah_benar = jumlah_benar+1;
     } else {
       hasilJawaban1.innerHTML = '';
       tombolJawaban1.innerHTML = 'Peuréksa Jawaban';
@@ -76,6 +81,8 @@ kolomJawaban2.addEventListener('submit', function(event) {
       hasilJawaban2.innerHTML = 'Beutôi';
       tombolJawaban2.innerHTML = 'Tôp Jawaban';
       j2 = false;
+      skor_akhir = skor_akhir+10;
+      jumlah_benar = jumlah_benar+1;
     } else {
       hasilJawaban2.innerHTML = '';
       tombolJawaban2.innerHTML = 'Peuréksa Jawaban';
@@ -107,6 +114,8 @@ kolomJawaban3.addEventListener('submit', function(event) {
       document.getElementById("jawaban3").innerHTML = 'Beutôi';
       tombolJawaban3.innerHTML = 'Tôp Jawaban';
       j3 = false;
+      skor_akhir = skor_akhir+10;
+      jumlah_benar = jumlah_benar+1;
     } else {
       document.getElementById("jawaban3").innerHTML = '';
       tombolJawaban3.innerHTML = 'Peuréksa Jawaban';
@@ -138,6 +147,8 @@ kolomJawaban4.addEventListener('submit', function(event) {
       hasilJawaban4.innerHTML = 'Beutôi';
       tombolJawaban4.innerHTML = 'Tôp Jawaban';
       j4 = false;
+      skor_akhir = skor_akhir+10;
+      jumlah_benar = jumlah_benar+1;
     } else {
       hasilJawaban4.innerHTML = '';
       tombolJawaban4.innerHTML = 'Peuréksa Jawaban';
@@ -169,6 +180,8 @@ kolomJawaban5.addEventListener('submit', function(event) {
       document.getElementById("jawaban5").innerHTML = 'Beutôi';
       tombolJawaban5.innerHTML = 'Tôp Jawaban';
       j5 = false;
+      skor_akhir = skor_akhir+10;
+      jumlah_benar = jumlah_benar+1;
     } else {
       document.getElementById("jawaban5").innerHTML = '';
       tombolJawaban5.innerHTML = 'Peuréksa Jawaban';
@@ -280,6 +293,8 @@ cekJawaban6.addEventListener('click', function() {
         hasilJawaban6.innerHTML = '<b>Kotak Mantöng Soh</b>';
     } else if (counter6 == 6) {
         hasilJawaban6.innerHTML = '<b>Beutôi</b>';
+        skor_akhir = skor_akhir+10;
+        jumlah_benar = jumlah_benar+1;
     } else {
         hasilJawaban6.innerHTML = '<b>Salah</b>';
     }
@@ -298,6 +313,8 @@ kolomJawaban7.addEventListener('submit', function(event) {
       hasilJawaban7.innerHTML = 'Beutôi';
       tombolJawaban7.innerHTML = 'Tôp Jawaban';
       j7 = false;
+      skor_akhir = skor_akhir+10;
+      jumlah_benar = jumlah_benar+1;
     } else {
       hasilJawaban7.innerHTML = '';
       tombolJawaban7.innerHTML = 'Peuréksa Jawaban';
@@ -328,6 +345,8 @@ kolomJawaban8.addEventListener('submit', function(event) {
       hasilJawaban8.innerHTML = 'Beutôi';
       tombolJawaban8.innerHTML = 'Tôp Jawaban';
       j8 = false;
+      skor_akhir = skor_akhir+10;
+      jumlah_benar = jumlah_benar+1;
     } else {
       hasilJawaban8.innerHTML = '';
       tombolJawaban8.innerHTML = 'Peuréksa Jawaban';
@@ -358,6 +377,8 @@ kolomJawaban9.addEventListener('submit', function(event) {
       hasilJawaban9.innerHTML = 'Beutôi';
       tombolJawaban9.innerHTML = 'Tôp Jawaban';
       j9 = false;
+      skor_akhir = skor_akhir+10;
+      jumlah_benar = jumlah_benar+1;
     } else {
       hasilJawaban9.innerHTML = '';
       tombolJawaban9.innerHTML = 'Peuréksa Jawaban';
@@ -385,24 +406,51 @@ kolomJawaban10.addEventListener('submit', function(event) {
 
   if (input10_1.value == 89) {
     if (j10 == true) {
-      document.getElementById("jawaban10").innerHTML = 'Beutôi';
+      hasilJawaban10.innerHTML = 'Beutôi';
       tombolJawaban10.innerHTML = 'Tôp Jawaban';
       j10 = false;
+      skor_akhir = skor_akhir+10;
+      jumlah_benar = jumlah_benar+1;
     } else {
-      document.getElementById("jawaban10").innerHTML = '';
+      hasilJawaban10.innerHTML = '';
       tombolJawaban10.innerHTML = 'Peuréksa Jawaban';
       j10 = true;
     }
   } else {
     if (j10 == true) {
-      document.getElementById("jawaban10").innerHTML = 'Salah';
+      hasilJawaban10.innerHTML = 'Salah';
       tombolJawaban10.innerHTML = 'Tôp Jawaban';
       j10 = false;
     } else {
-      document.getElementById("jawaban10").innerHTML = '';
+      hasilJawaban10.innerHTML = '';
       tombolJawaban10.innerHTML = 'Peuréksa Jawaban';
       j10 = true;
     }
   }
   
 })
+
+
+let kolomNilai = document.getElementById("kolomnilai");
+let tombolNilai = document.getElementById('ceknilai');
+let hasilNilai = document.getElementById('nilai');
+
+//Periksa jumlah benar dan nilai (skor) akhir
+let j_nilai = true;
+
+kolomNilai.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  if (j_nilai == true) {
+    hasilNilai.innerHTML = skor_akhir;
+    tombolNilai.innerHTML = 'Tôp Hasil';
+    j_nilai = false;
+  } else {
+    hasilNilai.innerHTML = '';
+    tombolNilai.innerHTML = 'Cek Nilai';
+    j_nilai = true;
+  }
+  
+})
+
+
