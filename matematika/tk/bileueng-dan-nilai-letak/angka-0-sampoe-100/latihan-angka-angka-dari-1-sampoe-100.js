@@ -141,6 +141,7 @@ kolomJawaban4.addEventListener('submit', function(event) {
   }
   
 })
+
 //Periksa jawaban no. 5
 let j5 = true;
 
