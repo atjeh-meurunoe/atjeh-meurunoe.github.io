@@ -23,9 +23,9 @@ let j1 = true;
 
 kolomJawaban1.addEventListener('submit', function(event) {
   event.preventDefault();
-  let opsi1_1 = document.getElementById('opsi1_1');
+  let opsi1_3 = document.getElementById('opsi1_3');
 
-  if (opsi1_1.checked == true) {
+  if (opsi1_3.checked == true) {
     if (j1 == true) {
       hasilJawaban1.innerHTML = 'Beutôi';
       tombolJawaban1.innerHTML = 'Tôp Jawaban';
@@ -48,14 +48,14 @@ kolomJawaban1.addEventListener('submit', function(event) {
   }
 })
 
-//Periksa jawaban no. 2
+//Perisksa Jawaban No. 2
 let j2 = true;
 
 kolomJawaban2.addEventListener('submit', function(event) {
   event.preventDefault();
-  let opsi2_3 = document.getElementById('opsi2_3');
+  let input2_1 = document.getElementById('input2_1');
 
-  if (opsi2_3.checked == true) {
+  if (input2_1.value == 16) {
     if (j2 == true) {
       hasilJawaban2.innerHTML = 'Beutôi';
       tombolJawaban2.innerHTML = 'Tôp Jawaban';
@@ -76,6 +76,7 @@ kolomJawaban2.addEventListener('submit', function(event) {
       j2 = true;
     }
   }
+  
 })
 
 //Periksa jawaban no. 3
@@ -143,9 +144,9 @@ let j5 = true;
 
 kolomJawaban5.addEventListener('submit', function(event) {
   event.preventDefault();
-  let opsi5_2 = document.getElementById('opsi5_2');
+  let opsi5_3 = document.getElementById('opsi5_3');
 
-  if (opsi5_2.checked == true) {
+  if (opsi5_3.checked == true) {
     if (j5 == true) {
       hasilJawaban5.innerHTML = 'Beutôi';
       tombolJawaban5.innerHTML = 'Tôp Jawaban';

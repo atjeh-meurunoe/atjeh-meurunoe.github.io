@@ -1,0 +1,61 @@
+/* soal no. 2 */
+.gambar_soal2 {
+    width: 430px;
+    margin: 2px;
+    border: 2px solid black;
+    background-color: gold;
+    padding: 5px;
+}
+/* akhir untuk soal no. 2 */
+
+
+
+
+/* soal no. 3 */
+.opsi_soal3_1 {
+    width: 260px;
+    margin: 2px;
+    border: 2px solid rgb(27, 183, 27);
+    padding: 5px;
+}
+
+.opsi_soal3_2 {
+    width: 260px;
+    margin: 2px;
+    border: 2px solid rgb(247, 88, 168);
+    padding: 5px;
+}
+
+.opsi_soal3_3 {
+    width: 260px;
+    margin: 2px;
+    border: 2px solid rgb(76, 124, 222);
+    padding: 5px;
+}
+/* akhir untuk soal no. 3 */
+
+
+
+
+/* soal no. 5 */
+.opsi_soal5_1 {
+    width: 320px;
+    margin: 2px;
+    border: 2px solid rgb(27, 183, 27);
+    padding: 5px;
+}
+
+.opsi_soal5_2 {
+    width: 320px;
+    margin: 2px;
+    border: 2px solid rgb(247, 88, 168);
+    padding: 5px;
+}
+
+.opsi_soal5_3 {
+    width: 320px;
+    margin: 2px;
+    border: 2px solid rgb(76, 124, 222);
+    padding: 5px;
+}
+/* akhir untuk soal no. 5 */
