@@ -1,0 +1,35 @@
+/* soal no. 1 */
+.opsi_soal1_1 {
+    width: 260px;
+    margin: 2px;
+    border: 2px solid rgb(27, 183, 27);
+    padding: 5px;
+}
+
+.opsi_soal1_2 {
+    width: 260px;
+    margin: 2px;
+    border: 2px solid rgb(247, 88, 168);
+    padding: 5px;
+}
+
+.opsi_soal1_3 {
+    width: 260px;
+    margin: 2px;
+    border: 2px solid rgb(76, 124, 222);
+    padding: 5px;
+}
+
+/* soal no. 2 */
+.gambar_soal2 {
+    width: 430px;
+    margin: 2px;
+    border: 2px solid black;
+    background-color: gold;
+    padding: 5px;
+}
+
+/* soal no. 3 */
+.batré {
+    margin-left: 15px;
+}
