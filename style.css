@@ -1,19 +1,5 @@
-.tiga-garis {
-  display: none;
-}
-
 #rata-tengah {
   text-align: center;
-}
-
-@media screen and (max-width: 800px) {
-  .menu-selain-kursus {
-    display: none;
-  }
-
-  .tiga-garis {
-    display: inline;
-  }
 }
 
 /* untuk materi pelajaran */
@@ -31,3 +17,42 @@
   color: white;
   cursor: pointer;
 }
+/* akhir untuk materi pelajaran */
+
+
+/*untuk tombol murid-guru-orangtua gabung*/
+.tombol-murid-guru-orangtua-gabung {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gold;
+  width: 23%;
+  height: 9%;
+  border: 2px solid black;
+}
+
+.tombol-murid-guru-orangtua-gabung:hover {
+  background-color: goldenrod;
+  color: white;
+  cursor: pointer;
+}
+/*akhir untuk tombol murid-guru-orangtua gabung*/
+
+
+/*untuk tombol murid-guru-orangtua pisah*/
+.tombol-murid-guru-orangtua-pisah {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gold;
+  width: 65%;
+  height: 9%;
+  border: 2px solid black;
+}
+
+.tombol-murid-guru-orangtua-pisah:hover {
+  background-color: goldenrod;
+  color: white;
+  cursor: pointer;
+}
+/*akhir untuk tombol murid-guru-orangtua pisah*/
