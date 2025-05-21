@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: 800px) {
-  .menu-selain-kursus {
+  .menu-selain-piléh-basa {
     display: none;
   }
 
@@ -23,13 +23,13 @@ body {
 #navbar {
   position: fixed;
   top: 0;
-  right: 0;
   left: 0;
-  padding: 25px 50px;
+  right: 0;
+  padding: 25px 25px;
   background: #000000;
   display: flex;
   justify-content: center;
-  z-index: 1;
+  align-items: center;
 }
   
 #navbar a {

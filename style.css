@@ -1,3 +1,11 @@
+.navbar-utama {
+  position: fixed;
+  border: none;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+
 #rata-tengah {
   text-align: center;
 }
