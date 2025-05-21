@@ -23,9 +23,9 @@ let j1 = true;
 
 kolomJawaban1.addEventListener('submit', function(event) {
   event.preventDefault();
-  let opsi1_1 = document.getElementById('opsi1_1');
+  let opsi1_2 = document.getElementById('opsi1_2');
 
-  if (opsi1_1.checked == true) {
+  if (opsi1_2.checked == true) {
     if (j1 == true) {
       hasilJawaban1.innerHTML = 'Beutôi';
       tombolJawaban1.innerHTML = 'Tôp Jawaban';
@@ -53,9 +53,9 @@ let j2 = true;
 
 kolomJawaban2.addEventListener('submit', function(event) {
   event.preventDefault();
-  let opsi2_3 = document.getElementById('opsi2_3');
+  let opsi2_2 = document.getElementById('opsi2_2');
 
-  if (opsi2_3.checked == true) {
+  if (opsi2_2.checked == true) {
     if (j2 == true) {
       hasilJawaban2.innerHTML = 'Beutôi';
       tombolJawaban2.innerHTML = 'Tôp Jawaban';
@@ -83,9 +83,9 @@ let j3 = true;
 
 kolomJawaban3.addEventListener('submit', function(event) {
   event.preventDefault();
-  let opsi3_2 = document.getElementById('opsi3_2');
+  let opsi3_1 = document.getElementById('opsi3_1');
 
-  if (opsi3_2.checked == true) {
+  if (opsi3_1.checked == true) {
     if (j3 == true) {
       hasilJawaban3.innerHTML = 'Beutôi';
       tombolJawaban3.innerHTML = 'Tôp Jawaban';

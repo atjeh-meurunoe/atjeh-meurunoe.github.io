@@ -56,3 +56,31 @@
   cursor: pointer;
 }
 /*akhir untuk tombol murid-guru-orangtua pisah*/
+
+
+
+/*untuk tombol-murid-guru-orangtua-bawah-laman*/
+.tombol-murid-guru-orangtua-bawah-laman {
+  justify-content: center;
+  align-items: center;
+  background-color: gold;
+  font-size: 100%;
+  width: 10%;
+  height: 5%;
+  border: 2px solid black;
+}
+
+.tombol-murid-guru-orangtua-bawah-laman:hover {
+  background-color: goldenrod;
+  color: white;
+  cursor: pointer;
+}
+/*akhir untuk tombol-murid-guru-orangtua-bawah-laman*/
+
+
+
+/*untuk navbar-bawah-laman-utama*/
+.navbar-bawah-laman-utama {
+  background-color: gold;
+}
+/*akhir untuk navbar-bawah-laman-utama*/

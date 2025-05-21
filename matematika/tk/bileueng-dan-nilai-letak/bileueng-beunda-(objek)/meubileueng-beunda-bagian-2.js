@@ -14,18 +14,14 @@ let kolomJawaban4 = document.getElementById("kolomjawaban4");
 let tombolJawaban4 = document.getElementById('cekjawaban4');
 let hasilJawaban4 = document.getElementById('jawaban4');
 
-let kolomJawaban5 = document.getElementById("kolomjawaban5");
-let tombolJawaban5 = document.getElementById('cekjawaban5');
-let hasilJawaban5 = document.getElementById('jawaban5');
-
 //Periksa jawaban no. 1
 let j1 = true;
 
 kolomJawaban1.addEventListener('submit', function(event) {
   event.preventDefault();
-  let opsi1_2 = document.getElementById('opsi1_2');
+  let opsi1_1 = document.getElementById('opsi1_1');
 
-  if (opsi1_2.checked == true) {
+  if (opsi1_1.checked == true) {
     if (j1 == true) {
       hasilJawaban1.innerHTML = 'Beutôi';
       tombolJawaban1.innerHTML = 'Tôp Jawaban';
@@ -53,9 +49,9 @@ let j2 = true;
 
 kolomJawaban2.addEventListener('submit', function(event) {
   event.preventDefault();
-  let opsi2_1 = document.getElementById('opsi2_1');
+  let opsi2_3 = document.getElementById('opsi2_3');
 
-  if (opsi2_1.checked == true) {
+  if (opsi2_3.checked == true) {
     if (j2 == true) {
       hasilJawaban2.innerHTML = 'Beutôi';
       tombolJawaban2.innerHTML = 'Tôp Jawaban';
@@ -83,9 +79,9 @@ let j3 = true;
 
 kolomJawaban3.addEventListener('submit', function(event) {
   event.preventDefault();
-  let opsi3_3 = document.getElementById('opsi3_3');
+  let opsi3_1 = document.getElementById('opsi3_1');
 
-  if (opsi3_3.checked == true) {
+  if (opsi3_1.checked == true) {
     if (j3 == true) {
       hasilJawaban3.innerHTML = 'Beutôi';
       tombolJawaban3.innerHTML = 'Tôp Jawaban';
@@ -113,9 +109,9 @@ let j4 = true;
 
 kolomJawaban4.addEventListener('submit', function(event) {
   event.preventDefault();
-  let opsi4_3 = document.getElementById('opsi4_3');
+  let opsi4_2 = document.getElementById('opsi4_2');
 
-  if (opsi4_3.checked == true) {
+  if (opsi4_2.checked == true) {
     if (j4 == true) {
       hasilJawaban4.innerHTML = 'Beutôi';
       tombolJawaban4.innerHTML = 'Tôp Jawaban';
@@ -134,36 +130,6 @@ kolomJawaban4.addEventListener('submit', function(event) {
       hasilJawaban4.innerHTML = '';
       tombolJawaban4.innerHTML = 'Peuréksa Jawaban';
       j4 = true;
-    }
-  }
-})
-
-//Periksa jawaban no. 5
-let j5 = true;
-
-kolomJawaban5.addEventListener('submit', function(event) {
-  event.preventDefault();
-  let opsi5_1 = document.getElementById('opsi5_1');
-
-  if (opsi5_1.checked == true) {
-    if (j5 == true) {
-      hasilJawaban5.innerHTML = 'Beutôi';
-      tombolJawaban5.innerHTML = 'Tôp Jawaban';
-      j5 = false;
-    } else {
-      hasilJawaban5.innerHTML = '';
-      tombolJawaban5.innerHTML = 'Peuréksa Jawaban';
-      j5 = true;
-    }
-  } else {
-    if (j5 == true) {
-      hasilJawaban5.innerHTML = 'Salah';
-      tombolJawaban5.innerHTML = 'Tôp Jawaban';
-      j5 = false;
-    } else {
-      hasilJawaban5.innerHTML = '';
-      tombolJawaban5.innerHTML = 'Peuréksa Jawaban';
-      j5 = true;
     }
   }
 })
