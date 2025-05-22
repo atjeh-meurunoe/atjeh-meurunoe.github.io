@@ -1,0 +1,20 @@
+/* untuk TK, SD, SMP, dan SMA */
+#rata-tengah {
+  text-align: center;
+}
+
+.jenjang {
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 10%;
+  background-color: gold;
+  width: 10%;
+  display: inline-block;
+}
+
+.jenjang:hover {
+  background-color: goldenrod;
+  color: white;
+  cursor: pointer;
+}
+/* Akhir untuk TK, SD, SMP, dan SMA */

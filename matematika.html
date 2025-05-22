@@ -2,16 +2,37 @@
 
 <head>
   <title>Matematika</title>
+  <link rel="stylesheet" href="matematika.css">
   <link rel="stylesheet" href="template-css-buatan-sendiri/navbar.css">
 </head>
 
 <body>
 
-  <iframe src="template-html-buatan-sendiri/navbar.html" style= "width: 100%; border: none; position: fixed;"></iframe>
-  <br><br><br><br><br><br><br>
+  <iframe style="position: fixed; border: none; right: 0; left: 0; width: 100%" src="template-html-buatan-sendiri/navbar.html"></iframe>
   
-  <p><a href="matematika/early-math.html" target="_blank">Matematika Awal &#128736;</a> <u>(Sang Hapôh Mantöng Nyoe, Mulai dari TK Mantöng)</u></p>
-  <p><a href="matematika/tk.html">TK (Taman Kanak-Kanak)</a></p>
+  <p style="padding-top: 150px";><a href="matematika/early-math.html" target="_blank">Matematika Awal &#128736;</a> <u>(Sang Hapôh Mantöng Nyoe, Mulai dari TK Mantöng)</u></p>
+  
+  <!-- Kotak untuk TK, SD, SMP, SMA -->
+  <div id="rata-tengah">
+    <div onclick="window.location.href='matematika/tk.html'" class="jenjang">
+      <img src="bajèe-aneuk-tk-png.png" width="55%"><br>
+      <b>TK</b>
+    </div>
+    <div onclick="alert('LAMAN GOHLOM GEUPEUGÖT. MOHON NEU SABA')" class="jenjang">
+      <img src="bajèe-sikula-sd-png.png" width="55%"><br>
+      <b>SD &#128736;</b>
+    </div>
+    <div onclick="alert('LAMAN GOHLOM GEUPEUGÖT. MOHON NEU SABA')" class="jenjang">
+      <img src="bajèe-sikula-smp-png.png" width="55%"><br>
+      <b>SMP &#128736;</b>
+    </div>
+    <div onclick="alert('LAMAN GOHLOM GEUPEUGÖT. MOHON NEU SABA')" class="jenjang">
+      <img src="bajèe-sikula-sma-png.png" width="55%"><br>
+      <b>SMA &#128736;</b>
+    </div>  
+  </div>
+  <!-- Akhir dari Kotak untuk SD, SMP, SMA -->
+
 </body>
 
 </html>
