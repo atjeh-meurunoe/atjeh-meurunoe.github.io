@@ -370,9 +370,9 @@ let j9 = true;
 
 kolomJawaban9.addEventListener('submit', function(event) {
   event.preventDefault();
-  let opsi9_2 = document.getElementById('opsi9_2');
+  let isian9 = document.getElementById('isian9');
 
-  if (opsi9_2.checked == true) {
+  if (isian9.value == 7) {
     if (j9 == true) {
       hasilJawaban9.innerHTML = 'Beutôi';
       tombolJawaban9.innerHTML = 'Tôp Jawaban';
@@ -380,8 +380,8 @@ kolomJawaban9.addEventListener('submit', function(event) {
       skor_akhir = skor_akhir+10;
       jumlah_benar = jumlah_benar+1;
     } else {
-      hasilJawaban9.innerHTML = '';
-      tombolJawaban9.innerHTML = 'Peuréksa Jawaban';
+      hasilJawaban3.innerHTML = '';
+      tombolJawaban3.innerHTML = 'Peuréksa Jawaban';
       j9 = true;
     }
   } else {
