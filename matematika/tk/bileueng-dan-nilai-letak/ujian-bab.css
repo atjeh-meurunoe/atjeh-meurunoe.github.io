@@ -1,0 +1,69 @@
+/* soal 1 */
+.kotak-gambar-drag1 {
+    width: 95px;
+    border: 2px solid grey;
+    cursor: grab;
+}
+
+#drop-zone1 {
+    width: 800px;
+    height: 50px;
+    border: 5px solid black;
+}
+
+
+/* soal 6 */
+.kotak-gambar-drag6 {
+    width: 120px;
+    border: 2px solid grey;
+    cursor: grab;
+}
+
+#drop-zone6 {
+    width: 800px;
+    height: 50px;
+    border: 5px solid black;
+}
+
+/* di bawah ini soal no. 1, 6, dan 10 sebelumnya
+/* soal no. 1 
+.opsi_soal1_1 {
+    width: 225px;
+    margin: 2px;
+    border: 2px solid rgb(27, 183, 27);
+    padding: 5px;
+}
+
+.opsi_soal1_2 {
+    width: 225px;
+    margin: 2px;
+    border: 2px solid rgb(247, 88, 168);
+    padding: 5px;
+}
+
+.opsi_soal1_3 {
+    width: 225px;
+    margin: 2px;
+    border: 2px solid rgb(76, 124, 222);
+    padding: 5px;
+}
+
+/* soal no. 6
+.kotak-gambar-drag6 {
+    width: 95px;
+    border: 2px solid grey;
+    cursor: grab;
+}
+
+#drop-zone6 {
+    width: 800px;
+    height: 50px;
+    border: 5px solid black;
+}
+
+/* soal no. 10 
+td {
+    border: 1px solid black;
+}
+*/
+

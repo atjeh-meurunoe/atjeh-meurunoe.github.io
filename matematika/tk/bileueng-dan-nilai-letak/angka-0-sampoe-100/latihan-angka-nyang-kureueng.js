@@ -125,13 +125,13 @@ kolomJawaban4.addEventListener('submit', function(event) {
       j4 = false;
     } else {
       document.getElementById("jawaban4").innerHTML = '';
-      tombolJawaban2.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban4.innerHTML = 'Peuréksa Jawaban';
       j4 = true;
     }
   } else {
     if (j4 == true) {
       document.getElementById("jawaban4").innerHTML = 'Salah';
-      tombolJawaban2.innerHTML = 'Tôp Jawaban';
+      tombolJawaban4.innerHTML = 'Tôp Jawaban';
       j4 = false;
     } else {
       document.getElementById("jawaban4").innerHTML = '';

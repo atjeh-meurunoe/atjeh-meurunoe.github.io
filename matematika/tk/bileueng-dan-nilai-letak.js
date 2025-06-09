@@ -5,3 +5,7 @@ function quiz1() {
 function quiz2() {
     window.location.href = "bileueng-dan-nilai-letak/quiz-2.html"
 }
+
+function ujianBab() {
+    window.location.href = "bileueng-dan-nilai-letak/ujian-bab.html"
+}
