@@ -23,9 +23,9 @@ let j1 = true;
 
 kolomJawaban1.addEventListener('submit', function(event) {
   event.preventDefault();
-  let opsi1_1 = document.getElementById('opsi1_1');
+  let input1 = document.getElementById('input1');
 
-  if (opsi1_1.checked == true) {
+  if (input1.value == 104) {
     if (j1 == true) {
       hasilJawaban1.innerHTML = 'Beutôi';
       tombolJawaban1.innerHTML = 'Tôp Jawaban';
@@ -53,10 +53,9 @@ let j2 = true;
 
 kolomJawaban2.addEventListener('submit', function(event) {
   event.preventDefault();
-  let input2_1 = document.getElementById('input2_1');
-  let input2_2 = document.getElementById('input2_2');
+  let input2 = document.getElementById('input2');
 
-  if (input2_1.value == 12 && input2_2.value == 16) {
+  if (input2.value == 106) {
     if (j2 == true) {
       document.getElementById("jawaban2").innerHTML = 'Beutôi';
       tombolJawaban2.innerHTML = 'Tôp Jawaban';
@@ -85,9 +84,9 @@ let j3 = true;
 
 kolomJawaban3.addEventListener('submit', function(event) {
   event.preventDefault();
-  let opsi3_3 = document.getElementById('opsi3_3');
+  let input3 = document.getElementById('input3');
 
-  if (opsi3_3.checked == true) {
+  if (input3.value == 108) {
     if (j3 == true) {
       hasilJawaban3.innerHTML = 'Beutôi';
       tombolJawaban3.innerHTML = 'Tôp Jawaban';
@@ -115,10 +114,9 @@ let j4 = true;
 
 kolomJawaban4.addEventListener('submit', function(event) {
   event.preventDefault();
-  let input4_1 = document.getElementById('input4_1');
-  let input4_2 = document.getElementById('input4_2');
+  let input4 = document.getElementById('input4');
 
-  if (input4_1.value == 8 && input4_2.value == 12) {
+  if (input4.value == 119) {
     if (j4 == true) {
       document.getElementById("jawaban4").innerHTML = 'Beutôi';
       tombolJawaban4.innerHTML = 'Tôp Jawaban';
@@ -147,9 +145,9 @@ let j5 = true;
 
 kolomJawaban5.addEventListener('submit', function(event) {
   event.preventDefault();
-  let opsi5_2 = document.getElementById('opsi5_2');
+  let input5 = document.getElementById('input5');
 
-  if (opsi5_2.checked == true) {
+  if (input5.value == 101) {
     if (j5 == true) {
       hasilJawaban5.innerHTML = 'Beutôi';
       tombolJawaban5.innerHTML = 'Tôp Jawaban';
