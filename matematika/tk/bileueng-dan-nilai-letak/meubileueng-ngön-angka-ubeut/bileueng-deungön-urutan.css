@@ -1,4 +1,4 @@
-.quiz1, .quiz2, .ujian-bab {
+button {
     background-color: gold;
     color: black;
     font-size: 16px;
@@ -6,7 +6,7 @@
     padding: 7px;
 }
 
-.quiz1:hover, .quiz2:hover, .ujian-bab:hover {
+button:hover {
     background-color: goldenrod;
     color: white;
 }

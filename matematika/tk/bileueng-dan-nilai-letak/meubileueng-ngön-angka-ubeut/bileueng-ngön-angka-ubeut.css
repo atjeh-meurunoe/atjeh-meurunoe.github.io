@@ -1,0 +1,51 @@
+button {
+    background-color: gold;
+    color: black;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+button:hover {
+    background-color: goldenrod;
+    color: white;
+}
+
+/* soal 1 */
+.kotak-gambar-drag1 {
+    width: 80px;
+    border: 2px solid grey;
+    cursor: grab;
+}
+
+#drop-zone1 {
+    width: 800px;
+    height: 100px;
+    border: 5px solid black;
+}
+
+/* soal 2 */
+.kotak-gambar-drag2 {
+    width: 100px;
+    border: 2px solid grey;
+    cursor: grab;
+}
+
+#drop-zone2 {
+    width: 800px;
+    height: 100px;
+    border: 5px solid black;
+}
+
+/* soal 3 */
+.kotak-gambar-drag3 {
+    width: 75px;
+    border: 2px solid grey;
+    cursor: grab;
+}
+
+#drop-zone3 {
+    width: 800px;
+    height: 100px;
+    border: 5px solid black;
+}

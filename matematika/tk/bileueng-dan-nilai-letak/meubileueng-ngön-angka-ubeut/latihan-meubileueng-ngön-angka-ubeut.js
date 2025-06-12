@@ -1,5 +1,3 @@
-//MASIH ADA YANG ANEH, MASA KITA BISA DROP GAMBAR MANGGA KE KOTAK RAMBUTAN DAN SEBALIKNYA WKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWKWK
-
 //DI BAWAH INI UNTUK SOAL NO. 1
 
 //Saat gambar di-drag & di-drop pada kotak jawaban
@@ -93,8 +91,12 @@ cekJawaban1.addEventListener('click', function() {
         hasilJawaban1.innerHTML = '<b>Kotak Mantöng Soh</b>';
     } else if (counter1 == 7) {
         hasilJawaban1.innerHTML = '<b>Beutôi</b>';
+        hasilJawaban1.style.fontSize = '20px'; 
+        hasilJawaban1.style.color = 'green'; 
     } else {
         hasilJawaban1.innerHTML = '<b>Salah</b>';
+        hasilJawaban1.style.fontSize = '20px'; 
+        hasilJawaban1.style.color = 'red'; 
     }
     
 })
@@ -161,7 +163,7 @@ dropZone2.addEventListener('drop', function(e) {
 
         gambarDrop2[counter2-1] = clonedSelected2;
     
-        //tambakan (append) <div> yang sudah mengandung gambar kloningan tersebut ke dalam dropZone1
+        //tambakan (append) <div> yang sudah mengandung gambar kloningan tersebut ke dalam dropZone2
         dropZone2.appendChild(divBaru2);
     }
 })
@@ -261,7 +263,7 @@ dropZone3.addEventListener('drop', function(e) {
 
         gambarDrop3[counter3-1] = clonedSelected3;
     
-        //tambakan (append) <div> yang sudah mengandung gambar kloningan tersebut ke dalam dropZone1
+        //tambakan (append) <div> yang sudah mengandung gambar kloningan tersebut ke dalam dropZone3
         dropZone3.appendChild(divBaru3);
     }
 })

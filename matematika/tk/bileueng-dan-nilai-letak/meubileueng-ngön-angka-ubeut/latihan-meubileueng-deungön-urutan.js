@@ -1,5 +1,6 @@
 let tombolJawaban1 = document.getElementById('cekjawaban1');
 let kolomJawaban1 = document.getElementById("kolomjawaban1");
+let hasilJawaban1 = document.getElementById('jawaban1');
 
 let kolomJawaban2 = document.getElementById("kolomjawaban2");
 let tombolJawaban2 = document.getElementById('cekjawaban2');
@@ -7,6 +8,7 @@ let hasilJawaban2 = document.getElementById('jawaban2');
 
 let tombolJawaban3 = document.getElementById('cekjawaban3');
 let kolomJawaban3 = document.getElementById("kolomjawaban3");
+let hasilJawaban3 = document.getElementById('jawaban3');
 
 let kolomJawaban4 = document.getElementById("kolomjawaban4");
 let tombolJawaban4 = document.getElementById('cekjawaban4');
@@ -14,6 +16,7 @@ let hasilJawaban4 = document.getElementById('jawaban4');
 
 let tombolJawaban5 = document.getElementById('cekjawaban5');
 let kolomJawaban5 = document.getElementById("kolomjawaban5");
+let hasilJawaban5 = document.getElementById('jawaban5');
 
 
 //Perisksa Jawaban No. 1
@@ -26,22 +29,26 @@ kolomJawaban1.addEventListener('submit', function(event) {
 
   if (input1_1.value == 2 && input1_2.value == 5) {
     if (j1 == true) {
-      document.getElementById("jawaban1").innerHTML = 'Beutôi';
-      tombolJawaban1.innerHTML = 'Tôp Jawaban';
+      hasilJawaban1.innerHTML = 'Beutôi';
+      hasilJawaban1.style.fontSize = '16.5px';
+      hasilJawaban1.style.color = 'green';
+      tombolJawaban1.innerHTML = '<b>Tôp Jawaban</b>';
       j1 = false;
     } else {
       document.getElementById("jawaban1").innerHTML = '';
-      tombolJawaban1.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban1.innerHTML = '<b>Peuréksa Jawaban</b>';
       j1 = true;
     }
   } else {
     if (j1 == true) {
-      document.getElementById("jawaban1").innerHTML = 'Salah';
-      tombolJawaban1.innerHTML = 'Tôp Jawaban';
+      hasilJawaban1.innerHTML = 'Salah';
+      hasilJawaban1.style.fontSize = '16.5px';
+      hasilJawaban1.style.color = 'red';
+      tombolJawaban1.innerHTML = '<b>Tôp Jawaban</b>';
       j1 = false;
     } else {
       document.getElementById("jawaban1").innerHTML = '';
-      tombolJawaban1.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban1.innerHTML = '<b>Peuréksa Jawaban</b>';
       j1 = true;
     }
   }
@@ -59,21 +66,25 @@ kolomJawaban2.addEventListener('submit', function(event) {
   if (opsi2_2.checked == true) {
     if (j2 == true) {
       hasilJawaban2.innerHTML = 'Beutôi';
-      tombolJawaban2.innerHTML = 'Tôp Jawaban';
+      hasilJawaban2.style.fontSize = '16.5px';
+      hasilJawaban2.style.color = 'green';
+      tombolJawaban2.innerHTML = '<b>Tôp Jawaban</b>';
       j2 = false;
     } else {
       hasilJawaban2.innerHTML = '';
-      tombolJawaban2.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban2.innerHTML = '<b>Peuréksa Jawaban</b>';
       j2 = true;
     }
   } else {
     if (j2 == true) {
       hasilJawaban2.innerHTML = 'Salah';
-      tombolJawaban2.innerHTML = 'Tôp Jawaban';
+      hasilJawaban2.style.fontSize = '16.5px';
+      hasilJawaban2.style.color = 'red';
+      tombolJawaban2.innerHTML = '<b>Tôp Jawaban</b>';
       j2 = false;
     } else {
       hasilJawaban2.innerHTML = '';
-      tombolJawaban2.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban2.innerHTML = '<b>Peuréksa Jawaban</b>';
       j2 = true;
     }
   }
@@ -90,22 +101,26 @@ kolomJawaban3.addEventListener('submit', function(event) {
 
   if (input3_1.value == 2 && input3_2.value == 4) {
     if (j3 == true) {
-      document.getElementById("jawaban3").innerHTML = 'Beutôi';
-      tombolJawaban3.innerHTML = 'Tôp Jawaban';
+      hasilJawaban3.innerHTML = 'Beutôi';
+      hasilJawaban3.style.fontSize = '16.5px';
+      hasilJawaban3.style.color = 'green';
+      tombolJawaban3.innerHTML = '<b>Tôp Jawaban</b>';
       j3 = false;
     } else {
       document.getElementById("jawaban3").innerHTML = '';
-      tombolJawaban3.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban3.innerHTML = '<b>Peuréksa Jawaban</b>';
       j3 = true;
     }
   } else {
     if (j3 == true) {
-      document.getElementById("jawaban3").innerHTML = 'Salah';
-      tombolJawaban3.innerHTML = 'Tôp Jawaban';
+      hasilJawaban3.innerHTML = 'Salah';
+      hasilJawaban3.style.fontSize = '16.5px';
+      hasilJawaban3.style.color = 'red';
+      tombolJawaban3.innerHTML = '<b>Tôp Jawaban</b>';
       j3 = false;
     } else {
       document.getElementById("jawaban3").innerHTML = '';
-      tombolJawaban3.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban3.innerHTML = '<b>Peuréksa Jawaban</b>';
       j3 = true;
     }
   }
@@ -123,21 +138,25 @@ kolomJawaban4.addEventListener('submit', function(event) {
   if (opsi4_1.checked == true) {
     if (j4 == true) {
       hasilJawaban4.innerHTML = 'Beutôi';
-      tombolJawaban4.innerHTML = 'Tôp Jawaban';
+      hasilJawaban4.style.fontSize = '16.5px';
+      hasilJawaban4.style.color = 'green';
+      tombolJawaban4.innerHTML = '<b>Tôp Jawaban</b>';
       j4 = false;
     } else {
       hasilJawaban4.innerHTML = '';
-      tombolJawaban4.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban4.innerHTML = '<b>Peuréksa Jawaban</b>';
       j4 = true;
     }
   } else {
     if (j4 == true) {
       hasilJawaban4.innerHTML = 'Salah';
-      tombolJawaban4.innerHTML = 'Tôp Jawaban';
+      hasilJawaban4.style.fontSize = '16.5px';
+      hasilJawaban4.style.color = 'red';
+      tombolJawaban4.innerHTML = '<b>Tôp Jawaban</b>';
       j4 = false;
     } else {
       hasilJawaban4.innerHTML = '';
-      tombolJawaban4.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban4.innerHTML = '<b>Peuréksa Jawaban</b>';
       j4 = true;
     }
   }
@@ -155,22 +174,26 @@ kolomJawaban5.addEventListener('submit', function(event) {
 
   if (input5_1.value == 3 && input5_2.value == 6  && input5_3.value == 7) {
     if (j5 == true) {
-      document.getElementById("jawaban5").innerHTML = 'Beutôi';
-      tombolJawaban5.innerHTML = 'Tôp Jawaban';
+      hasilJawaban5.innerHTML = 'Beutôi';
+      hasilJawaban5.style.fontSize = '16.5px';
+      hasilJawaban5.style.color = 'green';
+      tombolJawaban5.innerHTML = '<b>Tôp Jawaban</b>';
       j5 = false;
     } else {
       document.getElementById("jawaban5").innerHTML = '';
-      tombolJawaban5.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban5.innerHTML = '<b>Peuréksa Jawaban</b>';
       j5 = true;
     }
   } else {
     if (j5 == true) {
-      document.getElementById("jawaban5").innerHTML = 'Salah';
-      tombolJawaban5.innerHTML = 'Tôp Jawaban';
+      hasilJawaban5.innerHTML = 'Salah';
+      hasilJawaban5.style.fontSize = '16.5px';
+      hasilJawaban5.style.color = 'red';
+      tombolJawaban5.innerHTML = '<b>Tôp Jawaban</b>';
       j5 = false;
     } else {
       document.getElementById("jawaban5").innerHTML = '';
-      tombolJawaban5.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban5.innerHTML = '<b>Peuréksa Jawaban</b>';
       j5 = true;
     }
   }
