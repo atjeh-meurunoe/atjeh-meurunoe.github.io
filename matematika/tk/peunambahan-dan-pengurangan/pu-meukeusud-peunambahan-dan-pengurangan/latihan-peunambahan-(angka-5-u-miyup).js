@@ -37,7 +37,7 @@ kolomJawaban1.addEventListener('submit', function(event) {
   event.preventDefault();
   let isian1 = document.getElementById('isian1');
 
-  if (isian1.value == 5) {
+  if (isian1.value == 3) {
     if (j1 == true) {
       suaraJawabanBenar();
       hasilJawaban1.innerHTML = 'Beutôi';
@@ -75,7 +75,7 @@ kolomJawaban2.addEventListener('submit', function(event) {
   event.preventDefault();
   let isian2 = document.getElementById('isian2');
 
-  if (isian2.value == 3) {
+  if (isian2.value == 1) {
     if (j2 == true) {
       suaraJawabanBenar();
       hasilJawaban2.innerHTML = 'Beutôi';
@@ -112,7 +112,7 @@ kolomJawaban3.addEventListener('submit', function(event) {
   event.preventDefault();
   let isian3 = document.getElementById('isian3');
 
-  if (isian3.value == 5) {
+  if (isian3.value == 2) {
     if (j3 == true) {
       suaraJawabanBenar();
       hasilJawaban3.innerHTML = 'Beutôi';
@@ -128,7 +128,7 @@ kolomJawaban3.addEventListener('submit', function(event) {
   } else {
     if (j3 == true) {
       suaraJawabanSalah();
-      hasilJawaban3.innerHTML = 'Beutôi';
+      hasilJawaban3.innerHTML = 'Salah';
       hasilJawaban3.style.fontSize = '16.5px';
       hasilJawaban3.style.color = 'red';
       tombolJawaban3.innerHTML = '<b>Tôp Jawaban</b>';
@@ -150,7 +150,7 @@ kolomJawaban4.addEventListener('submit', function(event) {
   event.preventDefault();
   let isian4 = document.getElementById('isian4');
 
-  if (isian4.value == 4) {
+  if (isian4.value == 3) {
     if (j4 == true) {
       suaraJawabanBenar();
       hasilJawaban4.innerHTML = 'Beutôi';
@@ -166,7 +166,7 @@ kolomJawaban4.addEventListener('submit', function(event) {
   } else {
     if (j4 == true) {
       suaraJawabanSalah();
-      hasilJawaban4.innerHTML = 'Beutôi';
+      hasilJawaban4.innerHTML = 'Salah';
       hasilJawaban4.style.fontSize = '16.5px';
       hasilJawaban4.style.color = 'red';
       tombolJawaban4.innerHTML = '<b>Tôp Jawaban</b>';
