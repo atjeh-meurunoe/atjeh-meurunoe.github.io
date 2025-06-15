@@ -2,12 +2,15 @@
     <head>
         <title>Bileueng dan nilai letak: Quiz 1 | Atjèh Meurunoe</title>
         <link rel="stylesheet" href="../../../template-css-buatan-sendiri/navbar.css">
+        <link rel="stylesheet" href="../../../template-css-buatan-sendiri/tombol-cek-jawaban.css">
         <link rel="stylesheet" href="quiz-1.css">
     </head>
 
 <body>
 
     <iframe src="../../../template-html-buatan-sendiri/navbar.html" style="width: 100%; border: none; position: fixed;"></iframe>
+    <audio id="suara-jawaban-benar" src="../../../meunyoe-jawaban-beutôi.mpeg"></audio>
+    <audio id="suara-jawaban-salah" src="../../../meunyoe-jawaban-salah.mpeg"></audio>
     <br><br><br><br><br><br><br>
 
     <!-- Soal No. 1-->
@@ -39,11 +42,11 @@
         </div>
   
         <br>
-        <button id="cekjawaban1" type="submit">Peuréksa Jawaban</button>
+        <button id="cekjawaban1" type="submit"><b>Peuréksa Jawaban</b></button>
     </form>
   
-    <h3 id="jawaban1"></h3>
-    <br><br>
+    <b id="jawaban1"></b>
+    <br><br><br>
 
     <!-- Soal No. 2-->
     <img src="angka-5-9.png" width="20%">
@@ -66,11 +69,11 @@
         <b>10</b>
   
         <br><br>
-        <button id="cekjawaban2" type="submit">Peuréksa Jawaban</button>
+        <button id="cekjawaban2" type="submit"><b>Peuréksa Jawaban</b></button>
     </form>
   
-    <h3 id="jawaban2"></h3>
-    <br>
+    <b id="jawaban2"></b>
+    <br><br>
 
     <!-- Soal No. 3-->
     <h3>3. Pasoe angka nyang kureueng bak kotak soh ji yup nyoe.</h3>
@@ -79,12 +82,12 @@
         <h3>4, 5, 6, 
             <input type="text" id="input3_1" size="1" placeholder="?" required>, 
             8, 9, 10, 
-            <input type="text" id="input3_2" size="1" placeholder="?" required><br><br>
-        <button id="cekjawaban3" type="submit">Peuréksa Jawaban</button>
+            <input type="text" id="input3_2" size="1" placeholder="?" required></h3>
+        <button id="cekjawaban3" type="submit"><b>Peuréksa Jawaban</b></button>
     </form>
   
-    <h3 id="jawaban3"></h3>
-    <br>
+    <b id="jawaban3"></b>
+    <br><br>
 
     <!-- Soal No. 4-->
     <h3>4. Keulompok angka puluhan nyang töh nyang jumlahjih 40?</h3>
@@ -106,11 +109,11 @@
         <b><img src="keulompok-puluhan-biru.png" width="7.5%"><img src="keulompok-puluhan-biru.png" width="7.5%"><img src="keulompok-puluhan-biru.png" width="7.5%"><img src="keulompok-puluhan-biru.png" width="7.5%"></b>
   
         <br><br>
-        <button id="cekjawaban4" type="submit">Peuréksa Jawaban</button>
+        <button id="cekjawaban4" type="submit"><b>Peuréksa Jawaban</b></button>
     </form>
   
-    <h3 id="jawaban4"></h3>
-    <br>
+    <b id="jawaban4"></b>
+    <br><br>
 
     <!-- Soal No. 5 -->
     <h3>5. Pasoe angka nyang sesuai ngön urutan meubileueng<br>
@@ -124,11 +127,11 @@
             <input type="text" id="input5_2" size="1" placeholder="?" required><img src="jeum.png" width="5%">
             <b>6</b><img src="jeum.png" width="5%">
             <br><br>
-            <button id="cekjawaban5" type="submit">Peuréksa Jawaban</button>
+            <button id="cekjawaban5" type="submit"><b>Peuréksa Jawaban</b></button>
         </form>
 
-    <h3 id="jawaban5"></h3>
-    <br>
+    <b id="jawaban5"></b>
+    <br><br>
 
     <!-- Soal No. 6 -->
     <h3>6. Peuduek 6 boh moto bak kotak ji yup nyoe</h3>
@@ -140,11 +143,11 @@
     
     <div id="drop-zone6"></div>
     <br>
-    <button id="hapusDrop6">Hapôh Gamba</button>
-    <button id="cekJawaban6">Cek Jawaban</button>
-    <span id="hasilJawaban6"></span>
+    <button id="hapusDrop6"><b>Hapôh Gamba</b></button>
+    <button id="cekJawaban6"><b>Peuréksa Jawaban</b></button>
+    <b id="hasilJawaban6"></b>
 
-    <br><br>
+    <br><br><br>
 
     <!-- Soal No. 7-->
     <h3>7. Padum boh tingkap nyang na deuh neu kalön ji yup nyoe?</h3>
@@ -170,11 +173,11 @@
         <b>4</b>
   
         <br><br>
-        <button id="cekjawaban7" type="submit">Peuréksa Jawaban</button>
+        <button id="cekjawaban7" type="submit"><b>Peuréksa Jawaban</b></button>
     </form>
   
-    <h3 id="jawaban7"></h3>
-    <br>
+    <b id="jawaban7"></b>
+    <br><br>
 
     <!-- Soal No. 8 -->
         <h4>8. Nyang töh cara bileueng payông nyang beutôi ji yup nyoe?</h4>
@@ -200,12 +203,11 @@
           <b>5</b><img src="payông.png" width="5%">
           <b>6</b><img src="payông.png" width="5%">
           <br><br>
-          <button id="cekjawaban8" type="submit">Peuréksa Jawaban</button>
+          <button id="cekjawaban8" type="submit"><b>Peuréksa Jawaban</b></button>
         </form>
       
-        <h3 id="jawaban8"></h3>
-
-        <br>
+        <b id="jawaban8"></b>
+        <br><br>
 
     <!-- Soal No. 9-->
     <h3>9. Ji yup nyoe na 10 boh glah jus boh limo</h3>
@@ -214,11 +216,11 @@
     <h3>Maka beuna 
         <form action="" id="kolomjawaban9" style="display:inline">
             <input size="1" type="text" id="isian9" required> boh rincông teuk</h3>
-            <button id="cekjawaban9" type="submit">Peuréksa Jawaban</button>
+            <button id="cekjawaban9" type="submit"><b>Peuréksa Jawaban</b></button>
         </form> 
   
-    <h3 id="jawaban9"></h3>
-    <br>
+    <b id="jawaban9"></b>
+    <br><br>
 
     <!-- Soal No. 10 -->
     <h3>10. Angka nyang töh nyang gadöh?</h3>
@@ -262,17 +264,17 @@
         <input type="text" id="input10_1" size="1" placeholder="?" required>
   
         <br><br>
-        <button id="cekjawaban10" type="submit">Peuréksa Jawaban</button>
+        <button id="cekjawaban10" type="submit"><b>Peuréksa Jawaban</b></button>
     </form>
   
-    <h3 id="jawaban10"></h3>
+    <b id="jawaban10"></b>
     <br>
 
     <br>
 
     <!-- Cek Nilai -->
     <form action="" id="kolomnilai" style="display:inline">
-        <button id="ceknilai" type="submit">Cek Nilai</button>
+        <button id="ceknilai" type="submit"><b>Cek Nilai</b></button>
     </form>
 
     <h3 id="nilai"></h3>

@@ -1,0 +1,12 @@
+button {
+    background-color: gold;
+    color: black;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+button:hover {
+    background-color: goldenrod;
+    color: white;
+}
