@@ -1,3 +1,15 @@
+function suaraJawabanBenar() {
+    let suara = document.getElementById("suara-jawaban-benar");
+    suara.currentTime = 0; // Reset waktu jika ingin bisa diklik berulang
+    suara.play();
+}
+
+function suaraJawabanSalah() {
+    let suara = document.getElementById("suara-jawaban-salah");
+    suara.currentTime = 0; // Reset waktu jika ingin bisa diklik berulang
+    suara.play();
+}
+
 let skor_akhir = 0;
 let jumlah_benar = 0;
 
@@ -125,13 +137,19 @@ hapusDrop1.addEventListener('click', function() {
 cekJawaban1.addEventListener('click', function() {
 
     if (counter1 == 0) {
-        hasilJawaban1.innerHTML = '<b>Kotak Mantöng Soh</b>';
+      hasilJawaban1.innerHTML = 'Kotak Mantöng Soh';
     } else if (counter1 == 7) {
-        hasilJawaban1.innerHTML = '<b>Beutôi</b>';
-        skor_akhir = skor_akhir+10;
-        jumlah_benar = jumlah_benar+1;
+      suaraJawabanBenar(); 
+      hasilJawaban1.innerHTML = 'Beutôi';
+      hasilJawaban1.style.fontSize = '16.5px';
+      hasilJawaban1.style.color = 'green';
+      skor_akhir = skor_akhir+10;
+      jumlah_benar = jumlah_benar+1;
     } else {
-        hasilJawaban1.innerHTML = '<b>Salah</b>';
+      suaraJawabanSalah();
+      hasilJawaban1.innerHTML = 'Salah';
+      hasilJawaban1.style.fontSize = '16.5px';
+      hasilJawaban1.style.color = 'red';
     }
     
 })
@@ -146,24 +164,30 @@ kolomJawaban2.addEventListener('submit', function(event) {
 
   if (opsi2_2.checked == true) {
     if (j2 == true) {
+      suaraJawabanBenar(); 
       hasilJawaban2.innerHTML = 'Beutôi';
-      tombolJawaban2.innerHTML = 'Tôp Jawaban';
+      hasilJawaban2.style.fontSize = '16.5px';
+      hasilJawaban2.style.color = 'green';
+      tombolJawaban2.innerHTML = '<b>Tôp Jawaban</b>';
       j2 = false;
       skor_akhir = skor_akhir+10;
       jumlah_benar = jumlah_benar+1;
     } else {
       hasilJawaban2.innerHTML = '';
-      tombolJawaban2.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban2.innerHTML = '<b>Peuréksa Jawaban</b>';
       j2 = true;
     }
   } else {
     if (j2 == true) {
+      suaraJawabanSalah();
       hasilJawaban2.innerHTML = 'Salah';
-      tombolJawaban2.innerHTML = 'Tôp Jawaban';
+      hasilJawaban2.style.fontSize = '16.5px';
+      hasilJawaban2.style.color = 'red';
+      tombolJawaban2.innerHTML = '<b>Tôp Jawaban</b>';
       j2 = false;
     } else {
       hasilJawaban2.innerHTML = '';
-      tombolJawaban2.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban2.innerHTML = '<b>Peuréksa Jawaban</b>';
       j2 = true;
     }
   }
@@ -178,24 +202,30 @@ kolomJawaban3.addEventListener('submit', function(event) {
 
   if (isian3.value == 8) {
     if (j3 == true) {
+      suaraJawabanBenar(); 
       hasilJawaban3.innerHTML = 'Beutôi';
-      tombolJawaban3.innerHTML = 'Tôp Jawaban';
+      hasilJawaban3.style.fontSize = '16.5px';
+      hasilJawaban3.style.color = 'green';
+      tombolJawaban3.innerHTML = '<b>Tôp Jawaban</b>';
       j3 = false;
       skor_akhir = skor_akhir+10;
       jumlah_benar = jumlah_benar+1;
     } else {
       hasilJawaban3.innerHTML = '';
-      tombolJawaban3.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban3.innerHTML = '<b>Peuréksa Jawaban</b>';
       j3 = true;
     }
   } else {
     if (j3 == true) {
+      suaraJawabanSalah();
       hasilJawaban3.innerHTML = 'Salah';
-      tombolJawaban3.innerHTML = 'Tôp Jawaban';
+      hasilJawaban3.style.fontSize = '16.5px';
+      hasilJawaban3.style.color = 'red';
+      tombolJawaban3.innerHTML = '<b>Tôp Jawaban</b>';
       j3 = false;
     } else {
       hasilJawaban3.innerHTML = '';
-      tombolJawaban3.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban3.innerHTML = '<b>Peuréksa Jawaban</b>';
       j3 = true;
     }
   }
@@ -210,24 +240,30 @@ kolomJawaban4.addEventListener('submit', function(event) {
 
   if (opsi4_1.checked == true) {
     if (j4 == true) {
+      suaraJawabanBenar(); 
       hasilJawaban4.innerHTML = 'Beutôi';
-      tombolJawaban4.innerHTML = 'Tôp Jawaban';
+      hasilJawaban4.style.fontSize = '16.5px';
+      hasilJawaban4.style.color = 'green';
+      tombolJawaban4.innerHTML = '<b>Tôp Jawaban</b>';
       j4 = false;
       skor_akhir = skor_akhir+10;
       jumlah_benar = jumlah_benar+1;
     } else {
       hasilJawaban4.innerHTML = '';
-      tombolJawaban4.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban4.innerHTML = '<b>Peuréksa Jawaban</b>';
       j4 = true;
     }
   } else {
     if (j4 == true) {
+      suaraJawabanSalah();
       hasilJawaban4.innerHTML = 'Salah';
-      tombolJawaban4.innerHTML = 'Tôp Jawaban';
+      hasilJawaban4.style.fontSize = '16.5px';
+      hasilJawaban4.style.color = 'red';
+      tombolJawaban4.innerHTML = '<b>Tôp Jawaban</b>';
       j4 = false;
     } else {
       hasilJawaban4.innerHTML = '';
-      tombolJawaban4.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban4.innerHTML = '<b>Peuréksa Jawaban</b>';
       j4 = true;
     }
   }
@@ -242,24 +278,30 @@ kolomJawaban5.addEventListener('submit', function(event) {
 
   if (opsi5_1.checked == true) {
     if (j5 == true) {
+      suaraJawabanBenar(); 
       hasilJawaban5.innerHTML = 'Beutôi';
-      tombolJawaban5.innerHTML = 'Tôp Jawaban';
+      hasilJawaban5.style.fontSize = '16.5px';
+      hasilJawaban5.style.color = 'green';
+      tombolJawaban5.innerHTML = '<b>Tôp Jawaban</b>';
       j5 = false;
       skor_akhir = skor_akhir+10;
       jumlah_benar = jumlah_benar+1;
     } else {
       hasilJawaban5.innerHTML = '';
-      tombolJawaban5.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban5.innerHTML = '<b>Peuréksa Jawaban</b>';
       j5 = true;
     }
   } else {
     if (j5 == true) {
+      suaraJawabanSalah();
       hasilJawaban5.innerHTML = 'Salah';
-      tombolJawaban5.innerHTML = 'Tôp Jawaban';
+      hasilJawaban5.style.fontSize = '16.5px';
+      hasilJawaban5.style.color = 'red';
+      tombolJawaban5.innerHTML = '<b>Tôp Jawaban</b>';
       j5 = false;
     } else {
       hasilJawaban5.innerHTML = '';
-      tombolJawaban5.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban5.innerHTML = '<b>Peuréksa Jawaban</b>';
       j5 = true;
     }
   }
@@ -354,13 +396,19 @@ hapusDrop6.addEventListener('click', function() {
 cekJawaban6.addEventListener('click', function() {
 
     if (counter6 == 0) {
-        hasilJawaban6.innerHTML = '<b>Kotak Mantöng Soh</b>';
+      hasilJawaban6.innerHTML = 'Kotak Mantöng Soh';
     } else if (counter6 == 6) {
-        hasilJawaban6.innerHTML = '<b>Beutôi</b>';
-        skor_akhir = skor_akhir+10;
-        jumlah_benar = jumlah_benar+1;
+      suaraJawabanBenar(); 
+      hasilJawaban6.innerHTML = 'Beutôi';
+      hasilJawaban6.style.fontSize = '16.5px';
+      hasilJawaban6.style.color = 'green';
+      skor_akhir = skor_akhir+10;
+      jumlah_benar = jumlah_benar+1;
     } else {
-        hasilJawaban6.innerHTML = '<b>Salah</b>';
+      suaraJawabanSalah();
+      hasilJawaban6.innerHTML = 'Salah';
+      hasilJawaban6.style.fontSize = '16.5px';
+      hasilJawaban6.style.color = 'red';
     }
     
 })
@@ -374,24 +422,30 @@ kolomJawaban7.addEventListener('submit', function(event) {
 
   if (opsi7_3.checked == true) {
     if (j7 == true) {
+      suaraJawabanBenar(); 
       hasilJawaban7.innerHTML = 'Beutôi';
-      tombolJawaban7.innerHTML = 'Tôp Jawaban';
+      hasilJawaban7.style.fontSize = '16.5px';
+      hasilJawaban7.style.color = 'green';
+      tombolJawaban7.innerHTML = '<b>Tôp Jawaban</b>';
       j7 = false;
       skor_akhir = skor_akhir+10;
       jumlah_benar = jumlah_benar+1;
     } else {
       hasilJawaban7.innerHTML = '';
-      tombolJawaban7.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban7.innerHTML = '<b>Peuréksa Jawaban</b>';
       j7 = true;
     }
   } else {
     if (j7 == true) {
+      suaraJawabanSalah();
       hasilJawaban7.innerHTML = 'Salah';
-      tombolJawaban7.innerHTML = 'Tôp Jawaban';
+      hasilJawaban7.style.fontSize = '16.5px';
+      hasilJawaban7.style.color = 'red';
+      tombolJawaban7.innerHTML = '<b>Tôp Jawaban</b>';
       j7 = false;
     } else {
       hasilJawaban7.innerHTML = '';
-      tombolJawaban7.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban7.innerHTML = '<b>Peuréksa Jawaban</b>';
       j7 = true;
     }
   }
@@ -406,24 +460,30 @@ kolomJawaban8.addEventListener('submit', function(event) {
 
   if (opsi8_1.checked == true) {
     if (j8 == true) {
+      suaraJawabanBenar(); 
       hasilJawaban8.innerHTML = 'Beutôi';
-      tombolJawaban8.innerHTML = 'Tôp Jawaban';
+      hasilJawaban8.style.fontSize = '16.5px';
+      hasilJawaban8.style.color = 'green';
+      tombolJawaban8.innerHTML = '<b>Tôp Jawaban</b>';
       j8 = false;
       skor_akhir = skor_akhir+10;
       jumlah_benar = jumlah_benar+1;
     } else {
       hasilJawaban8.innerHTML = '';
-      tombolJawaban8.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban8.innerHTML = '<b>Peuréksa Jawaban</b>';
       j8 = true;
     }
   } else {
     if (j8 == true) {
+      suaraJawabanSalah();
       hasilJawaban8.innerHTML = 'Salah';
-      tombolJawaban8.innerHTML = 'Tôp Jawaban';
+      hasilJawaban8.style.fontSize = '16.5px';
+      hasilJawaban8.style.color = 'red';
+      tombolJawaban8.innerHTML = '<b>Tôp Jawaban</b>';
       j8 = false;
     } else {
       hasilJawaban8.innerHTML = '';
-      tombolJawaban8.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban8.innerHTML = '<b>Peuréksa Jawaban</b>';
       j8 = true;
     }
   }
@@ -439,24 +499,30 @@ kolomJawaban9.addEventListener('submit', function(event) {
 
   if (input9_1.value == 35 && input9_2.value == 39) {
     if (j9 == true) {
+      suaraJawabanBenar(); 
       hasilJawaban9.innerHTML = 'Beutôi';
-      tombolJawaban9.innerHTML = 'Tôp Jawaban';
+      hasilJawaban9.style.fontSize = '16.5px';
+      hasilJawaban9.style.color = 'green';
+      tombolJawaban9.innerHTML = '<b>Tôp Jawaban</b>';
       j9 = false;
       skor_akhir = skor_akhir+10;
       jumlah_benar = jumlah_benar+1;
     } else {
       hasilJawaban9.innerHTML = '';
-      tombolJawaban9.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban9.innerHTML = '<b>Peuréksa Jawaban</b>';
       j9 = true;
     }
   } else {
     if (j9 == true) {
+      suaraJawabanSalah();
       hasilJawaban9.innerHTML = 'Salah';
-      tombolJawaban9.innerHTML = 'Tôp Jawaban';
+      hasilJawaban9.style.fontSize = '16.5px';
+      hasilJawaban9.style.color = 'red';
+      tombolJawaban9.innerHTML = '<b>Tôp Jawaban</b>';
       j9 = false;
     } else {
       hasilJawaban9.innerHTML = '';
-      tombolJawaban9.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban9.innerHTML = '<b>Peuréksa Jawaban</b>';
       j9 = true;
     }
   }
@@ -471,24 +537,30 @@ kolomJawaban10.addEventListener('submit', function(event) {
 
   if (opsi10_1.checked == true) {
     if (j10 == true) {
+      suaraJawabanBenar(); 
       hasilJawaban10.innerHTML = 'Beutôi';
-      tombolJawaban10.innerHTML = 'Tôp Jawaban';
+      hasilJawaban10.style.fontSize = '16.5px';
+      hasilJawaban10.style.color = 'green';
+      tombolJawaban10.innerHTML = '<b>Tôp Jawaban</b>';
       j10 = false;
       skor_akhir = skor_akhir+10;
       jumlah_benar = jumlah_benar+1;
     } else {
       hasilJawaban10.innerHTML = '';
-      tombolJawaban10.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban10.innerHTML = '<b>Peuréksa Jawaban</b>';
       j10 = true;
     }
   } else {
     if (j10 == true) {
+      suaraJawabanSalah();
       hasilJawaban10.innerHTML = 'Salah';
-      tombolJawaban10.innerHTML = 'Tôp Jawaban';
+      hasilJawaban10.style.fontSize = '16.5px';
+      hasilJawaban10.style.color = 'red';
+      tombolJawaban10.innerHTML = '<b>Tôp Jawaban</b>';
       j10 = false;
     } else {
       hasilJawaban10.innerHTML = '';
-      tombolJawaban10.innerHTML = 'Peuréksa Jawaban';
+      tombolJawaban10.innerHTML = '<b>Peuréksa Jawaban</b>';
       j10 = true;
     }
   }
@@ -501,6 +573,7 @@ let tombolNilai = document.getElementById('ceknilai');
 let hasilNilai = document.getElementById('nilai');
 
 //Periksa jumlah benar dan nilai (skor) akhir
+//ADA KELEMAHAN DARI SISTEM CEK NILAI YANG BISA MENAMBAH NILAI JIKA TOMBOL BENAR DI-KLIK LEBIH DARI 1x
 let j_nilai = true;
 
 kolomNilai.addEventListener('submit', function(event) {
@@ -508,11 +581,11 @@ kolomNilai.addEventListener('submit', function(event) {
 
   if (j_nilai == true) {
     hasilNilai.innerHTML = skor_akhir;
-    tombolNilai.innerHTML = 'Tôp Hasil';
+    tombolNilai.innerHTML = '<b>Tôp Hasil</b>';
     j_nilai = false;
   } else {
     hasilNilai.innerHTML = '';
-    tombolNilai.innerHTML = 'Cek Nilai';
+    tombolNilai.innerHTML = '<b>Cek Nilai</b>';
     j_nilai = true;
   }
   
