@@ -1,0 +1,12 @@
+/* soal no. 6 */
+.kotak-gambar-drag6 {
+    width: 95px;
+    border: 2px solid grey;
+    cursor: grab;
+}
+
+#drop-zone6 {
+    width: 800px;
+    height: 50px;
+    border: 5px solid black;
+}

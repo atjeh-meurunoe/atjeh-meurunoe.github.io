@@ -33,14 +33,15 @@ let kolomJawaban5 = document.getElementById("kolomjawaban5");
 let tombolJawaban5 = document.getElementById('cekjawaban5');
 let hasilJawaban5 = document.getElementById("jawaban5");
 
+
 //Periksa jawaban no. 1
 let j1 = true;
 
 kolomJawaban1.addEventListener('submit', function(event) {
   event.preventDefault();
-  let opsi1_3 = document.getElementById('opsi1_3');
+  let isian1 = document.getElementById('isian1');
 
-  if (opsi1_3.checked == true) {
+  if (isian1.value == 4) {
     if (j1 == true) {
       suaraJawabanBenar(); 
       hasilJawaban1.innerHTML = 'Beutôi';
@@ -71,15 +72,17 @@ kolomJawaban1.addEventListener('submit', function(event) {
   }
 })
 
-
 //Periksa jawaban no. 2
 let j2 = true;
 
 kolomJawaban2.addEventListener('submit', function(event) {
   event.preventDefault();
-  let opsi2_1 = document.getElementById('opsi2_1');
+  let isian2_1 = document.getElementById('isian2_1');
+  let isian2_2 = document.getElementById('isian2_2');
+  let isian2_3 = document.getElementById('isian2_3');
+  let isian2_4 = document.getElementById('isian2_4');
 
-  if (opsi2_1.checked == true) {
+  if (isian2_1.value == 9 && isian2_2.value == 1 && isian2_3.value == 7 && isian2_4.value == 3) {
     if (j2 == true) {
       suaraJawabanBenar(); 
       hasilJawaban2.innerHTML = 'Beutôi';
@@ -115,9 +118,9 @@ let j3 = true;
 
 kolomJawaban3.addEventListener('submit', function(event) {
   event.preventDefault();
-  let opsi3_2 = document.getElementById('opsi3_2');
+  let isian3 = document.getElementById('isian3');
 
-  if (opsi3_2.checked == true) {
+  if (isian3.value == 4) {
     if (j3 == true) {
       suaraJawabanBenar(); 
       hasilJawaban3.innerHTML = 'Beutôi';
@@ -153,9 +156,9 @@ let j4 = true;
 
 kolomJawaban4.addEventListener('submit', function(event) {
   event.preventDefault();
-  let opsi4_1 = document.getElementById('opsi4_1');
+  let isian4 = document.getElementById('isian4');
 
-  if (opsi4_1.checked == true) {
+  if (isian4.value == 3) {
     if (j4 == true) {
       suaraJawabanBenar(); 
       hasilJawaban4.innerHTML = 'Beutôi';
@@ -191,9 +194,9 @@ let j5 = true;
 
 kolomJawaban5.addEventListener('submit', function(event) {
   event.preventDefault();
-  let opsi5_2 = document.getElementById('opsi5_2');
+  let isian5 = document.getElementById('isian5');
 
-  if (opsi5_2.checked == true) {
+  if (isian5.value == 8) {
     if (j5 == true) {
       suaraJawabanBenar(); 
       hasilJawaban5.innerHTML = 'Beutôi';
@@ -248,5 +251,3 @@ kolomNilai.addEventListener('submit', function(event) {
   }
   
 })
-
-
