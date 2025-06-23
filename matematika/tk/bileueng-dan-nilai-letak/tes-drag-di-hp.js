@@ -131,3 +131,17 @@ gambarDrag6.addEventListener('touchstart', function(e) {
     selected6 = e.target;
     console.log(e);
 })
+
+// Tambah event listener untuk "touchmove" pada gambar yang ada di dalam kotakGambarDrag
+gambarDrag6.addEventListener('touchmove', function(e) {
+    selected6 = e.target;
+    console.log(e);
+})
+
+// Tambah event listener untuk "touchend" pada gambar yang ada di dalam kotakGambarDrag
+gambarDrag6.addEventListener('touchend', function(e) {
+    selected6 = e.target;
+    console.log(e);
+})
+
+
